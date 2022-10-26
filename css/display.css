@@ -1,0 +1,36 @@
+.display-frame {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 404px;
+	height: 282px;
+
+	background: #5b5b5b;
+	box-shadow: inset 0px 4px 4px #00000040;
+	border-radius: 4px;
+}
+
+.border {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 314px;
+	height: 254px;
+
+	background: #1a1717;
+	box-shadow: inset 0px 4px 4px #00000040;
+}
+
+.display {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 295px;
+	height: 239px;
+
+	background: #abb6b3;
+	box-shadow: inset 0px 4px 4px #00000040;
+}

@@ -1,108 +1,37 @@
 body {
-    background: #7E7E7E;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-li {
-    display: list-item;
-    height: 27.8px;
-    width: 27.8px;
-    line-height: 28px;
-    margin: 6px;
-    text-align: center;
-}
+	height: 100vh;
 
-.container {
-    width: 100%;
-    max-width: 577px;
-    /* margin: 0 auto; */
+	background: #7e7e7e;
 }
 
 .atm-body {
-    height: 577px;
-    background: #AF0101;
-    box-shadow: 0px 4px 4px #00000040;
-    border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+
+	height: 550px;
+	width: 443px;
+	border-radius: 20px;
+
+	background: #af0101;
+	box-shadow: 0px 4px 4px #00000040;
 }
 
-.keyboard-bg {
-    display: flex;
-    gap: 36px;
-    padding: 6px;
-    background: #575757;
-    box-shadow: 0px 4px 4px #00000040;
-    border-radius: 5px;
+.container-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
 }
 
-/* .numbers-bg {
-    gap: 1px;
-} */
-
-.row {
-    list-style: none;
-    display: flex;
-}
-
-.caps-numbers {
-    display: flex;
-    justify-content: center;
-    align-content: stretch;
-        
-    border-radius: 2px;
-    width: 27.8px;
-    height: 27.8px;
-    
-    font-family: 'Inter';
-    font-style: bold;
-    font-weight: 900;
-    font-size: 22px;
-    
-    background: #D9D9D9;
-    color: #000000;
-    text-shadow: 0px 4px 4px #00000040;
-    filter: drop-shadow(0px 4px 4px #00000040);
-
-    cursor: pointer;
-}
-
-.caps-options {
-    background: #D9D9D9;
-    border-radius: 2px;
-    width: 52px;
-    height: 28px;
-    font-family: 'Inter';
-    font-style: bold;
-    font-weight: 900;
-    font-size: 9px;
-    color: #000000;
-    text-shadow: 0px 4px 4px #00000040;
-    filter: drop-shadow(0px 4px 4px #00000040);
-    cursor: pointer;
-}
-
-.green {
-    background: #05A933;
-    box-shadow: 0px 4px 4px #00000040;
-    border-radius: 2px;
-    width: 32px;
-    height: 6px;
-}
-
-.yellow {
-    background: #EBB700;
-    box-shadow: 0px 4px 4px #00000040;
-    border-radius: 2px;
-    width: 32px;
-    height: 6px;
-}
-
-.red {
-    background:#E10303;
-    box-shadow: 0px 4px 4px #00000040;
-    border-radius: 2px;
-    width: 32px;
-    height: 6px;
+.container-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
