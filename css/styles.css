@@ -10,10 +10,10 @@ body {
 
 .atm-body {
 	display: flex;
-	flex-direction: column;
-	gap: 50px;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	gap: 50px;
 
 	height: 550px;
 	width: 443px;

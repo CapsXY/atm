@@ -15,14 +15,28 @@
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/keyboard.css" />
 		<link rel="stylesheet" href="css/display.css" />
+
+		<script src="js/main.js" defer></script>
 	</head>
 
 	<body>
 		<div class="atm-body">
 			<div class="conteiner-top">
-				<div class="display-frame">
-					<div class="border">
-						<div class="display"></div>
+				<div id="display-frame" class="display-style">
+					<div class="container-buttons-left">
+						<button id="b1" class="buttons-style"></button>
+						<button id="b2" class="buttons-style"></button>
+						<button id="b3" class="buttons-style"></button>
+					</div>
+					<div id="border" class="display-style">
+						<div id="display" class="display-style">
+							Bem-vindo(a) ao Caixa 24h !
+						</div>
+					</div>
+					<div class="container-buttons-right">
+						<button id="b4" class="buttons-style"></button>
+						<button id="b5" class="buttons-style"></button>
+						<button id="b6" class="buttons-style"></button>
 					</div>
 				</div>
 			</div>
@@ -30,49 +44,49 @@
 				<div class="keyboard">
 					<div class="container-numbers">
 						<div id="row-1" class="row">
-							<div id="1" class="keycaps-number">1</div>
-							<div id="2" class="keycaps-number">2</div>
-							<div id="3" class="keycaps-number">3</div>
+							<button id="1" class="keycaps-number">1</button>
+							<button id="2" class="keycaps-number">2</button>
+							<button id="3" class="keycaps-number">3</button>
 						</div>
 						<div id="row-2" class="row">
-							<div id="4" class="keycaps-number">4</div>
-							<div id="5" class="keycaps-number">5</div>
-							<div id="6" class="keycaps-number">6</div>
+							<button id="4" class="keycaps-number">4</button>
+							<button id="5" class="keycaps-number">5</button>
+							<button id="6" class="keycaps-number">6</button>
 						</div>
 						<div id="row-3" class="row">
-							<div id="7" class="keycaps-number">7</div>
-							<div id="8" class="keycaps-number">8</div>
-							<div id="9" class="keycaps-number">9</div>
+							<button id="7" class="keycaps-number">7</button>
+							<button id="8" class="keycaps-number">8</button>
+							<button id="9" class="keycaps-number">9</button>
 						</div>
 						<div id="row-4" class="row">
-							<div id="x" class="keycaps-number">X</div>
-							<div id="0" class="keycaps-number">0</div>
-							<div id="seta-esq" class="keycaps-number"><-</div>
+							<button id="x" class="keycaps-number">X</button>
+							<button id="0" class="keycaps-number">0</button>
+							<button id="seta-esq" class="keycaps-number"><-</button>
 						</div>
 					</div>
 					<div class="container-options">
-						<div id="cancela" class="keycaps-option">
+						<button id="cancela" class="keycaps-option">
 							CANCELA
 							<div class="box-option">
 								<div id="red" class="color-bar"></div>
 								<div class="symbol">X</div>
 							</div>
-						</div>
-						<div id="corrige" class="keycaps-option">
+						</button>
+						<button id="corrige" class="keycaps-option">
 							CORRIGE
 							<div class="box-option">
 								<div id="yellow" class="color-bar"></div>
 								<div class="symbol">I</div>
 							</div>
-						</div>
-						<div id="entra" class="keycaps-option">
+						</button>
+						<button id="entra" class="keycaps-option">
 							ENTRA
 							<div class="box-option">
 								<div id="green" class="color-bar"></div>
 								<div class="symbol">O</div>
 							</div>
-						</div>
-						<div id="seta-dir" class="keycaps-option-seta">--></div>
+						</button>
+						<button id="seta-dir" class="keycaps-option-seta">--></button>
 					</div>
 				</div>
 				<img src="/image/cardReader.svg" alt="leitor_de_cartao" />
