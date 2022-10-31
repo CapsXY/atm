@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>ATM</title>
+		<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
 
 		<link
 			rel="stylesheet"
@@ -17,30 +18,44 @@
 		<link rel="stylesheet" href="css/display.css" />
 
 		<script src="js/main.js" defer></script>
+		<audio
+			autoplay
+			id="bgSound"
+			src="sound/bg.mp3"
+			loop="true"
+			width="0"
+			height="0"
+		></audio>
 	</head>
-
 	<body>
 		<div class="atm-body">
 			<div class="conteiner-top">
 				<div id="display-frame" class="display-style">
+					<!-- Display Keys on Left Start -->
 					<div class="container-buttons-left">
 						<button id="b1" class="buttons-style"></button>
 						<button id="b2" class="buttons-style"></button>
 						<button id="b3" class="buttons-style"></button>
 					</div>
+					<!-- Display Keys on Left End -->
 					<div id="border" class="display-style">
 						<div id="display" class="display-style">
-							Bem-vindo(a) ao Caixa 24h !
+							<div class="fade-intro">
+								<img src="image/01.svg" />
+							</div>
 						</div>
 					</div>
+					<!-- Display Keys on Right Start -->
 					<div class="container-buttons-right">
 						<button id="b4" class="buttons-style"></button>
 						<button id="b5" class="buttons-style"></button>
 						<button id="b6" class="buttons-style"></button>
 					</div>
+					<!-- Display Keys on Right End -->
 				</div>
 			</div>
 			<div class="container-bottom">
+				<!-- Keyboard Start -->
 				<div class="keyboard">
 					<div class="container-numbers">
 						<div id="row-1" class="row">
@@ -89,6 +104,7 @@
 						<button id="seta-dir" class="keycaps-option-seta">--></button>
 					</div>
 				</div>
+				<!-- Keyboard End -->
 				<img src="/image/cardReader.svg" alt="leitor_de_cartao" />
 			</div>
 		</div>
