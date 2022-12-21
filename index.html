@@ -1,112 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<title>ATM</title>
-		<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
-
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
-		/>
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/keyboard.css" />
-		<link rel="stylesheet" href="css/display.css" />
-
-		<script src="js/main.js" defer></script>
-		<audio
-			autoplay
-			id="bgSound"
-			src="sound/bg.mp3"
-			loop="true"
-			width="0"
-			height="0"
-		></audio>
-	</head>
-	<body>
-		<div class="atm-body">
-			<div class="conteiner-top">
-				<div id="display-frame" class="display-style">
-					<!-- Display Keys on Left Start -->
-					<div class="container-buttons-left">
-						<button id="b1" class="buttons-style"></button>
-						<button id="b2" class="buttons-style"></button>
-						<button id="b3" class="buttons-style"></button>
-					</div>
-					<!-- Display Keys on Left End -->
-					<div id="border" class="display-style">
-						<div id="display" class="display-style">
-							<div class="fade-intro">
-								<img src="image/01.svg" />
+<html lang="pt-BR" class="font-['Inter'] antialiased">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ATM</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"/>
+</head>
+	<body class="bg-[#7e7e7e]">
+		<main class="flex items-center justify-center h-screen">
+			<div class="drop-shadow-effect || bg-[#af0101] w-[443px] h-[577px] rounded-[20px] flex flex-col items-center justify-evenly">
+				<!-- Top -->
+				<div>
+					<div class="shadow-inner-effect || bg-[#5b5b5b] w-[404px] h-[282px] rounded-[4px] flex items-center justify-evenly">
+						<div class="drop-shadow-effect buttons-left || flex flex-col gap-[20px]">
+							<button class="bg-[#b4b4b4] w-[30px] h-[20px] rounded-[2px]"></button>
+							<button class="bg-[#b4b4b4] w-[30px] h-[20px] rounded-[2px]"></button>
+							<button class="bg-[#b4b4b4] w-[30px] h-[20px] rounded-[2px]"></button>
+						</div>
+						<div class="shadow-inner-effect || bg-[#1a1717] w-[314px] h-[254px] flex items-center justify-center">
+							<div class="shadow-inner-effect || bg-[#abb6b3] w-[295px] h-[239px] flex items-center justify-center">
+								<input class="display" type="text">
 							</div>
 						</div>
-					</div>
-					<!-- Display Keys on Right Start -->
-					<div class="container-buttons-right">
-						<button id="b4" class="buttons-style"></button>
-						<button id="b5" class="buttons-style"></button>
-						<button id="b6" class="buttons-style"></button>
-					</div>
-					<!-- Display Keys on Right End -->
-				</div>
-			</div>
-			<div class="container-bottom">
-				<!-- Keyboard Start -->
-				<div class="keyboard">
-					<div class="container-numbers">
-						<div id="row-1" class="row">
-							<button id="1" class="keycaps-number">1</button>
-							<button id="2" class="keycaps-number">2</button>
-							<button id="3" class="keycaps-number">3</button>
+						<div class="drop-shadow-effect buttons-right || flex flex-col gap-[20px]">
+							<button class="bg-[#b4b4b4] w-[30px] h-[20px] rounded-[2px]"></button>
+							<button class="bg-[#b4b4b4] w-[30px] h-[20px] rounded-[2px]"></button>
+							<button class="bg-[#b4b4b4] w-[30px] h-[20px] rounded-[2px]"></button>
 						</div>
-						<div id="row-2" class="row">
-							<button id="4" class="keycaps-number">4</button>
-							<button id="5" class="keycaps-number">5</button>
-							<button id="6" class="keycaps-number">6</button>
-						</div>
-						<div id="row-3" class="row">
-							<button id="7" class="keycaps-number">7</button>
-							<button id="8" class="keycaps-number">8</button>
-							<button id="9" class="keycaps-number">9</button>
-						</div>
-						<div id="row-4" class="row">
-							<button id="x" class="keycaps-number">X</button>
-							<button id="0" class="keycaps-number">0</button>
-							<button id="seta-esq" class="keycaps-number"><-</button>
-						</div>
-					</div>
-					<div class="container-options">
-						<button id="cancela" class="keycaps-option">
-							CANCELA
-							<div class="box-option">
-								<div id="red" class="color-bar"></div>
-								<div class="symbol">X</div>
-							</div>
-						</button>
-						<button id="corrige" class="keycaps-option">
-							CORRIGE
-							<div class="box-option">
-								<div id="yellow" class="color-bar"></div>
-								<div class="symbol">I</div>
-							</div>
-						</button>
-						<button id="entra" class="keycaps-option">
-							ENTRA
-							<div class="box-option">
-								<div id="green" class="color-bar"></div>
-								<div class="symbol">O</div>
-							</div>
-						</button>
-						<button id="seta-dir" class="keycaps-option-seta">--></button>
 					</div>
 				</div>
-				<!-- Keyboard End -->
-				<img src="/image/cardReader.svg" alt="leitor_de_cartao" />
+				<!-- Bottom -->
+				<div class="flex gap-[23px]">
+					<div>
+						<div class="shadow-inner-effect || bg-[#575757] w-[225px] h-[162px] rounded-[5px] flex gap-[36px] items-center justify-center font-black">
+							<div class="drop-shadow-effect || flex flex-col gap-[6px]">
+								<div class="flex gap-[6px]">
+									<button class="key key_1 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">1</button>
+									<button class="key key_2 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">2</button>
+									<button class="key key_3 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">3</button>
+								</div>
+								<div class="flex gap-[6px]">
+									<button class="key key_4 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">4</button>
+									<button class="key key_5 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">5</button>
+									<button class="key key_6 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">6</button>
+								</div>
+								<div class="flex gap-[6px]">
+									<button class="key key_7 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">7</button>
+									<button class="key key_8 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">8</button>
+									<button class="key key_9 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">9</button>
+								</div>
+								<div class="flex gap-[6px]">
+									<button class="key key_x || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">X</button>
+									<button class="key key_0 || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]">0</button>
+									<button class="key key_del || bg-[#d9d9d9] w-[28px] h-[28px] rounded-[2px]"><- </button>
+								</div>
+							</div>
+							<div class="drop-shadow-effect || flex flex-col gap-[6px] text-[9px]">
+								<button class="bg-[#d9d9d9] w-[52px] h-[28px] rounded-[2px] uppercase flex flex-col pl-1">
+									Cancela
+									<div class="flex items-center gap-[3px]">
+										<div class="bg-[#e10303] w-[32px] h-[6px] rounded-[2px]"></div>
+										<div class="text-[#5b5b5b] text-[10px]">x</div></div>
+								</button>
+								<button class="bg-[#d9d9d9] w-[52px] h-[28px] rounded-[2px] uppercase flex flex-col pl-1">
+									Corrige
+									<div class="flex items-center gap-[7px]">
+										<span class="bg-[#ebb700] w-[32px] h-[6px] rounded-[2px]"></span>
+										<span class="text-[#5b5b5b] text-[10px]">i</span></div>
+								</button>
+								<button class="bg-[#d9d9d9] w-[52px] h-[28px] rounded-[2px] uppercase flex flex-col pl-1">
+									Entra
+									<div class="flex items-center gap-[3px]">
+										<span class="bg-[#05a933] w-[32px] h-[6px] rounded-[2px]"></span>
+										<span class="text-[#5b5b5b] text-[10px]">o</span></div>
+								</button>
+								<button class="bg-[#d9d9d9] w-[52px] h-[28px] rounded-[2px] uppercase flex flex-col items-center justify-center text-[12px]">--></button>
+							</div>
+						</div>
+					</div>
+					<img src="svg/cardReader.svg">
+				</div>
 			</div>
-		</div>
+		</main>
+		<script src="js/main.js"></script>
 	</body>
 </html>

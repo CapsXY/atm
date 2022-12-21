@@ -1,15 +1,8 @@
-var bgSound = document.getElementById("bgSound");
-bgSound.volume = 0.1;
+const keys = document.querySelectorAll(".key");
 
-// var buttonNumber = document.getElementById("buttonNumber");
-// buttonNumber.volume = 1;
+function press(keySelector) {
+	const element = document.querySelector(keySelector);
 
-const teclasDisplay = document.querySelectorAll(".buttons-style");
-
-const tecla = teclasDisplay;
-
-tecla.onclick = function (event) {
-	toca(teclasDisplay);
+	if (element != null && element.localName === "button") {
+	}
 }
-
-console.log(teclasDisplay)
