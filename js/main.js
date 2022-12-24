@@ -1,8 +1,8 @@
-const keys = document.querySelectorAll(".key");
+// const display = document.querySelector(".display");
+// const button = document.querySelectorAll(".key");
 
-function press(keySelector) {
-	const element = document.querySelector(keySelector);
-
-	if (element != null && element.localName === "button") {
-	}
-}
+// for (let i = 0; i < button.length; i++) {
+// 	button[i].onclick = function () {
+// 		display.value = display.value + button[i].submit;
+// 	};
+// }
