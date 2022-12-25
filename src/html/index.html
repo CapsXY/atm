@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="font-['Inter'] antialiased">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ATM</title>
+	<link rel="stylesheet" href="../css/input.css">
+	<link rel="stylesheet" href="../../dist/output.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"/>
+</head>
+	<body class="backgroundBody">
+		<main class="main">
+			<div class="atmCover">
+				<div class="topContent">
+					<div class="grayCoverDisplay">
+						<div class="groupDisplayButtons">
+							<button class="displayButton"></button>
+							<button class="displayButton"></button>
+							<button class="displayButton"></button>
+						</div>
+						<div class="blackFrameDisplay">
+							<!-- Display -->
+							<div class="display">
+								<img src="../svg/initial.svg">
+							</div>
+						</div>
+						<div class="groupDisplayButtons">
+							<button class="displayButton"></button>
+							<button class="displayButton"></button>
+							<button class="displayButton"></button>
+						</div>
+					</div>
+				</div>
+				<div class="bottomContent">
+					<div>
+						<div class="backgroundKeyboard">
+							<div class="keyboardNumbers">
+								<div class="sectionKeys">
+									<button class="keyNumber">1</button>
+									<button class="keyNumber">2</button>
+									<button class="keyNumber">3</button>
+								</div>
+								<div class="sectionKeys">
+									<button class="keyNumber">4</button>
+									<button class="keyNumber">5</button>
+									<button class="keyNumber">6</button>
+								</div>
+								<div class="sectionKeys">
+									<button class="keyNumber">7</button>
+									<button class="keyNumber">8</button>
+									<button class="keyNumber">9</button>
+								</div>
+								<div class="sectionKeys">
+									<button class="keyNumber">X</button>
+									<button class="keyNumber">0</button>
+									<button class="keyNumber"><- </button>
+								</div>
+							</div>
+							<div class="keyboardOptions">
+								<button class="keyOption">
+									Cancela
+									<div class="optionBar">
+										<div class="bg-[#e10303] optionColor"></div>
+										<div class="optionText">x</div></div>
+								</button>
+								<button class="keyOption">
+									Corrige
+									<div class="optionBarCorrige">
+										<span class="bg-[#ebb700] optionColor"></span>
+										<span class="optionText">i</span></div>
+								</button>
+								<button class="keyOption">
+									Entra
+									<div class="optionBar">
+										<span class="bg-[#05a933] optionColor"></span>
+										<span class="optionText">o</span></div>
+								</button>
+								<button class="keyOptionArrow">--></button>
+							</div>
+						</div>
+					</div>
+					<img src="../svg/cardReader.svg">
+				</div>
+			</div>
+		</main>
+		<script src="js/main.js"></script>
+	</body>
+</html>
