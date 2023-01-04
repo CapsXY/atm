@@ -1,8 +1,13 @@
-// const display = document.querySelector(".display");
-// const button = document.querySelectorAll(".key");
+const buttons = document.querySelectorAll(".key");
 
-// for (let i = 0; i < button.length; i++) {
-// 	button[i].onclick = function () {
-// 		display.value = display.value + button[i].submit;
-// 	};
-// }
+buttons.forEach(button => button.addEventListener("click", pressed));
+
+function pressed() {
+	document.getElementById("display").style.visibility = "hidden";
+}
+
+if (pressed == true){
+	document.getElementById("login").style.visibility = "visible";
+} else{
+	return(0);
+};

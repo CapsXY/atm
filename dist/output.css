@@ -513,6 +513,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
 .bg-\[\#e10303\] {
   --tw-bg-opacity: 1;
   background-color: rgb(225 3 3 / var(--tw-bg-opacity));
@@ -715,4 +727,30 @@ video {
   height: 6px;
   width: 32px;
   border-radius: 2px;
+}
+
+#display {
+  visibility: visible;
+}
+
+.starting {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes  fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#login {
+  visibility: hidden;
 }
