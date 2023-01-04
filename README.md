@@ -16,7 +16,7 @@ ATM é um caixa eletrônico virtual desenvolvido com objetivo de praticar meus c
 </p>
 
 <p align="center">
-  <img alt="Projeto" src="img\desktop.png">
+  <img alt="Projeto" src="src\svg\desktop.png">
 </p>
 
 <br>
